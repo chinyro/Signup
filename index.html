@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with Tailwind</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-purple-300">
+      <!-- Text Start -->
+    <div class="min-h-screen space-y-12 px-4 sm:px-6 lg:px-8">
+      <div class="main-title">
+        <h1 class="tracking-wider mt-5 p-5 text-center text-6xl font-extrabold text-gray-600 ">Sign Up</h1>
+        <p class="mt-2 text-center text-xl text-gray-500">
+          Already a member?
+          <a href="#" class="font-normal text-blue-500 no-underline hover:underline hover:text-blue-800">Login here</a>
+        </p>
+      </div>
+      <!-- Text End -->
+      <!-- Sign Up Form Start -->
+      <form class="max-w-lg w-full mx-auto bg-white shadow-2xl rounded-lg p-7 space-y-6">
+        <!-- <div class=" grid grid-cols-2 ">
+            <label class="text-lg font-bold text-gray-500" for="name">Name</label>
+            <label class="text-lg font-bold text-gray-500" for="name">Last Name</label>
+            <input class=" border rounded-lg bg-white m-2 p-2.5">
+            <input class="border rounded-lg bg-white m-2 p-2.5 ">
+        </div>         -->
+        <div class="grid grid-cols-2 gap-x-10 gap-y-1">
+          <label class="text-lg font-bold text-gray-500 pl-1" for="email">Name</label>
+          <label class="text-lg font-bold text-gray-500 pl-0.5" for="email">Last Name</label>
+          <input class="border rounded-lg bg-white px-3 py-3" type="text" name="email" id="email"/>
+          <input class="border rounded-lg bg-white px-3 py-3" type="text" name="email" id="email"/>
+      </div>
+        <div class="flex flex-col">
+          <label class="text-lg font-bold text-gray-500 mb-1" for="email">Email</label>
+          <input class="border rounded-lg bg-white px-3 py-3" type="text" name="email" id="email"/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-lg font-bold text-gray-500 mb-1" for="password">Password</label>
+          <input class="border rounded-lg bg-white px-3 py-3" type="password" name="password" id="password"/>
+        </div>
+        <div class="flex justify-between text-sm">
+          <div class="flex items-center space-x-2">
+          </div>
+        </div>
+        <div>
+          <button class="text-2xl w-full text-white font-semibold rounded-full py-3 px-6 bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-green-400 hover:to-blue-500">Sign Up</button>
+        </div>
+        <div class="relative pb-2">
+          <div class="absolute top-0 left-0 w-full border-b"></div>
+          <div class="absolute -top-3 left-0 w-full text-center">
+            <span class="bg-white px-4 text-md text-gray-400">or sign up with</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6 text-xl">
+          <div class="border-2 rounded-full p-3 text-center cursor-pointer hover:border-purple-600">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="border-2 rounded-full p-3 text-center cursor-pointer hover:border-purple-600">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="border-2 rounded-full p-3 text-center cursor-pointer hover:border-purple-600">
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Sign Up Form End -->
+  </body>
+</html>
