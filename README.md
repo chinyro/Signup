@@ -1,3 +1,3 @@
 # Signup using Tailwind CSS
 
-![](signupform.gif)
+![](images/signupform.gif)
